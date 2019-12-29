@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>我的事说来话长</title>
   
-  
+  <subtitle>以为绕过这道墙就会看到出口，却依旧是墙</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
