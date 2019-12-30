@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-30T04:34:21.845Z</updated>
+  <updated>2019-12-30T04:44:30.959Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test</title>
-    <link href="http://yoursite.com/2019/12/30/test/"/>
-    <id>http://yoursite.com/2019/12/30/test/</id>
-    <published>2019-12-30T04:29:06.000Z</published>
-    <updated>2019-12-30T04:34:21.845Z</updated>
+    <title>测试 橙子是傻逼</title>
+    <link href="http://yoursite.com/2019/12/30/%E6%B5%8B%E8%AF%95-%E6%A9%99%E5%AD%90%E6%98%AF%E5%82%BB%E9%80%BC/"/>
+    <id>http://yoursite.com/2019/12/30/%E6%B5%8B%E8%AF%95-%E6%A9%99%E5%AD%90%E6%98%AF%E5%82%BB%E9%80%BC/</id>
+    <published>2019-12-30T04:42:40.000Z</published>
+    <updated>2019-12-30T04:44:30.959Z</updated>
     
     <summary type="html">
     
@@ -29,13 +29,11 @@
       
         
         
-          &lt;p&gt;#����&lt;/p&gt;
-&lt;p&gt;����&lt;/p&gt;
+          &lt;p&gt;#橙子是傻逼&lt;br&gt;###chengzishishabi&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;���ò���&lt;br&gt;&lt;strong&gt;�Ӵֲ���&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;引用 橙子是傻逼&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;hr&gt;
-
+&lt;h2 id=&quot;加粗的橙子是傻逼&quot;&gt;&lt;a href=&quot;#加粗的橙子是傻逼&quot; class=&quot;headerlink&quot;
         
       
     
@@ -43,7 +41,7 @@
     
     
     
-      <category term="test" scheme="http://yoursite.com/tags/test/"/>
+      <category term="日记" scheme="http://yoursite.com/tags/%E6%97%A5%E8%AE%B0/"/>
     
   </entry>
   
