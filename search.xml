@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hello,hexo</title>
-    <url>/2019/12/29/hello-hexo/</url>
-    <content><![CDATA[]]></content>
+    <title>test</title>
+    <url>/2019/12/30/test/</url>
+    <content><![CDATA[<p>#����</p>
+<p>����</p>
+<blockquote>
+<p>���ò���<br><strong>�Ӵֲ���</strong></p>
+</blockquote>
+<hr>
+]]></content>
+      <tags>
+        <tag>test</tag>
+      </tags>
   </entry>
 </search>
