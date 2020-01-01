@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-31T07:16:23.143Z</updated>
+  <updated>2020-01-01T14:32:50.182Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一月一日</title>
+    <link href="http://yoursite.com/2020/01/01/%E4%B8%80%E6%9C%88%E4%B8%80%E6%97%A5/"/>
+    <id>http://yoursite.com/2020/01/01/%E4%B8%80%E6%9C%88%E4%B8%80%E6%97%A5/</id>
+    <published>2020-01-01T14:00:31.000Z</published>
+    <updated>2020-01-01T14:32:50.182Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一月一日&quot;&gt;&lt;a href=&quot;#一月一日&quot; class=&quot;headerlink&quot; title=&quot;一月一日&quot;&gt;&lt;/a&gt;一月一日&lt;/h1&gt;&lt;p&gt; 
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="日记" scheme="http://yoursite.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>我的事说来话长</title>
