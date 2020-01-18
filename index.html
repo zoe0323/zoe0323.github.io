@@ -58,6 +58,95 @@
 
     
     
+    <article id="post-C-学习记录-课后题-第一章" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/01/18/C-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95-%E8%AF%BE%E5%90%8E%E9%A2%98-%E7%AC%AC%E4%B8%80%E7%AB%A0/"
+    >C++学习记录-课后题-第一章</a
+  >
+</h2>
+  
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/01/18/C-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95-%E8%AF%BE%E5%90%8E%E9%A2%98-%E7%AC%AC%E4%B8%80%E7%AB%A0/" class="article-date">
+  <time datetime="2020-01-18T03:38:14.000Z" itemprop="datePublished">2020-01-18</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>第一章<br>1.1<br>int main(){<br>    return 0;<br>}</p>
+<p>1.2<br>int main(){<br>    return -1;<br>}</p>
+<p>1.3<br>#include <iostream><br>int main(){<br>    std::cout&lt;&lt;”Hello,World”&lt;&lt;std::endl;<br>    return 0;<br>}</p>
+<p>#1.4<br>#include <iostream><br>int main(){<br>    std::cout&lt;&lt;”Enter two number”&lt;&lt;std::endl;<br>    int v1=0,v2=0;<br>    std::cin&gt;&gt;v1&gt;&gt;v2;<br>    std::cout&lt;&lt;”The product of “&lt;&lt;v1&lt;&lt;” and “&lt;&lt;v2&lt;&lt;” is “&lt;&lt;v1*v2&lt;&lt;std::endl;<br>    return 0;<br>}</p>
+<p>1.5<br>#include <iostream><br>int main(){<br>    std::cout&lt;&lt;”Enter two number”&lt;&lt;std::endl;<br>    int v1=0,v2=0;<br>    std::cin&gt;&gt;v1;<br>    std::cin&gt;&gt;v2;<br>    std::cout&lt;&lt;”The product of “;<br>    std::cout&lt;&lt;v1;<br>    std::cout&lt;&lt;” and “;<br>    std::cout&lt;&lt;v2;<br>    std::cout&lt;&lt;” is “;<br>    std::cout&lt;&lt;v1*v2;<br>    std::cout&lt;&lt;std::endl;<br>    return 0;<br>}</p>
+<p>1.6<br>题目所给程序片段不合法<br>第二行和第三行的“&lt;&lt;”输出运算符缺少左侧运算对象<br>应改正为：</p>
+<p>#include <iostream><br>int main(){<br>    int v1=2,v2=3;<br>    std::cout&lt;&lt;”The sum of “&lt;&lt;v1;<br>    std::cout&lt;&lt;” and “&lt;&lt;v2;<br>    std::cout&lt;&lt;” is “&lt;&lt;v1+v2&lt;&lt;std::endl;<br>    return 0;<br>}</p>
+<p>1.7<br>以下程序包含不正确的嵌套注释：<br>int main(){<br>    /*<br>    <em>123/*</em>/<br>    */<br> return 0;<br>}<br>编译器返回信息为：<br>[error]expected primary-expression before ’/ ’ token;<br>[error]expected primary-expression before ’return ’ ;</p>
+<p>1.8<br>#include <iostream><br>int main(){<br>    //std::cout&lt;&lt;”/*”;<br>    //std::cout&lt;&lt;”<em>/“;<br>    //std::cout&lt;&lt;/</em>“<em>/“</em>/“;<br>    std::cout&lt;&lt;/<em>“</em>/“/*”/<em>“</em>/;<br>    return 0;<br>}<br>每次只以一条语句为主体，其他语句使用单行注释符注释掉，逐个编译运行，运行结果如下：<br>/*<br><em>/<br>error，改正第三条语句，在“；”前加一个”，重新编译运行为</em>/<br>/*</p>
+<p>1.9<br>#include<iostream><br>int main(){<br>    int sum=0,val=50;<br>    while(val&lt;=100){<br>        sum+=val;<br>        ++val;<br>    }<br>    std::cout &lt;&lt; “The sum of 50 to 100 inclusive is “&lt;&lt;sum&lt;&lt;std::endl;<br>    return 0;<br>}</p>
+<p>1.10<br>#include <iostream><br>int main(){<br>    int num=10;<br>    while(num&gt;=0){<br>        std::cout&lt;&lt;num&lt;&lt;std::endl;<br>        –num;<br>    }<br>    return 0;<br>}</p>
+<p>1.11<br>#include <iostream><br>int main(){<br>    std::cout&lt;&lt;”Enter two number”&lt;&lt;std::endl;<br>    int v1=0,v2=0;<br>    std::cin&gt;&gt;v1&gt;&gt;v2;<br>    while (v1&lt;=v2){<br>        std::cout&lt;&lt;v1&lt;&lt;std::endl;<br>        ++v1;<br>        while(v1&gt;v2){<br>            return 0;<br>        }<br>    }<br>    while(v1&gt;=v2){<br>        std::cout&lt;&lt;v1&lt;&lt;std::endl;<br>        –v1;<br>        while(v1&lt;v2){<br>            return 0;<br>        }<br>    }<br>}</p>
+<p>1.12<br>#include <iostream><br>int main(){<br>    int sum=0;<br>    for (int i=-100;i&lt;=100;++i)<br>    sum +=i;<br>    std::cout&lt;&lt;sum&lt;&lt;std::endl;<br>    return 0;<br>}<br>for循环的功能：</p>
+<ol>
+<li>创建变量i，将其初始化为-100；</li>
+<li>检测i是否不大于100；若检测成功，执行for循环体。若失败，退出循环，继续执行for循环体之后的第一条语句；</li>
+<li>将i值增加1；</li>
+<li>重复第二步中的检测条件，只要条件为真就继续执行剩余步骤。<br>sum终值为0.<br>本题其实是-100到100所有整数的加和。</li>
+</ol>
+<p>1.13<br>（1）<br>#include <iostream><br>int main(){<br>    int sum=0;<br>    for (int num =50;num&lt;=100;++num)<br>    sum+=num;<br>    std::cout&lt;&lt;sum&lt;&lt;std::endl;<br>    return 0;<br>}</p>
+<p>（2）<br>#include <iostream><br>int main(){<br>    for (int j=10;j&gt;=0;–j)<br>    std::cout&lt;&lt;j&lt;&lt;std::endl;<br>    return 0;<br>}</p>
+<p>（3）<br>#include <iostream><br>int main(){<br>    std::cout&lt;&lt;”ÇëÊäÈëÁ½¸öÕûÊý”&lt;&lt;std::endl;<br>    int v1=0,v2=0;<br>    std::cin&gt;&gt;v1&gt;&gt;v2;<br>    for(int i=v1;i&gt;=v2;–i)<br>    std::cout&lt;&lt;i&lt;&lt;std::endl;<br>    for(int i=v1;i&lt;=v2;++i)<br>    std::cout&lt;&lt;i&lt;&lt;std::endl;<br>    return 0;<br>}</p>
+<p>1.14<br>for循环不需要提前初始化变量，并且代码形式简洁，比较适用于循环次数已知的情况<br>while循环在循环次数未知的情况下可能会更好用，比如在1.4.3例子中将数据读取的操作放入while循环条件中。</p>
+<p>1.15<br>常见错误汇总：<br>#include<iostream><br>int main( {<br>    int i=a;//type error<br>    /* syntax error<em>/<br>    std::cout&lt;&lt;”Read each file.”&lt;&lt;std::endl:<br>        std::cout&lt;&lt;Update master. &lt;&lt;std::endl;<br>        std::cout&lt;&lt;”Write new master.”std::endl;<br>        return 0<br>    /</em> declaration error*/<br>    int v1=0,v2=0;<br>    std::cin&gt;&gt;v&gt;&gt;v2;<br>    cout&lt;&lt;v1+v2&lt;&lt;std::endl;<br>    return 0;<br>}</p>
+<p>1.16<br>#include <iostream><br>int main(){<br>    int i=0,j=0;<br>    while(std::cin&gt;&gt;i){<br>        j+=i;<br>    }<br>    std::cout&lt;&lt;j&lt;&lt;std::endl;<br>    return 0;<br>}</p>
+<p>1.17<br>若输入的值都是相等的，比如输入5次10，本节的程序会输出“10 occurs 5 times”<br>若输入的值都是不相等的，比如依次输入123各1次，本节的程序会输出<br>“1 occurs 1 times”<br>“2 occurs 1 times”<br>“3 occurs 1 times”</p>
+<p>1.18<br>#include<iostream><br>int main(){<br>    using namespace std;<br>    int currVal=0,val=0;<br>    if(cin&gt;&gt;currVal){<br>        int cnt=1;<br>        while(cin&gt;&gt;val){<br>            if(val==currVal)<br>            ++cnt;<br>            else{<br>                cout&lt;&lt;currVal&lt;&lt;” occuers “&lt;&lt;cnt&lt;&lt;” times “&lt;&lt;endl;<br>                currVal=val;<br>                cnt=1;<br>            }<br>        }<br>        cout&lt;&lt;currVal&lt;&lt;” occurs “&lt;&lt;cnt&lt;&lt;” times “&lt;&lt;endl;<br>    }<br>    return 0;<br>}</p>
+<p>1.19<br>#include<iostream><br>using namespace std;<br>int main(){<br>    cout&lt;&lt;”ÇëÊäÈëÁ½¸öÕûÊý”&lt;&lt;endl;<br>    int i=0,j=0;<br>    cin&gt;&gt;i&gt;&gt;j;<br>    if(i&gt;j){<br>        while(i&gt;=j){<br>            cout&lt;&lt;i&lt;&lt;endl;<br>            i–;<br>        }<br>    }else{<br>        while(i&lt;=j){<br>            cout&lt;&lt;j&lt;&lt;endl;<br>            j–;<br>        }<br>    }<br>    return 0;<br>}</p>
+<p>1.20<br>#include <iostream><br>#include “Sales_item.h”<br>int main(){<br>    Sales_item book;<br>    while(std::cin &gt;&gt; book){<br>        std::cout &lt;&lt; “Record: “ &lt;&lt; book &lt;&lt;std::endl;<br>    }<br>    return 0;<br>}</p>
+
+      
+      <!-- 打赏 -->
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/01/18/C-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95-%E8%AF%BE%E5%90%8E%E9%A2%98-%E7%AC%AC%E4%B8%80%E7%AB%A0/" data-id="ck5j1xllu000010y61m4v3t4k"
+        class="article-share-link">分享</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%85%85%E7%94%B5/" rel="tag">充电</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+  
+  
+
+  
+
+</article>
+    
     <article id="post-网络问题“error-远程计算机或设备将不接受连接" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
@@ -101,7 +190,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/08/%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98%E2%80%9Cerror-%E8%BF%9C%E7%A8%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%88%96%E8%AE%BE%E5%A4%87%E5%B0%86%E4%B8%8D%E6%8E%A5%E5%8F%97%E8%BF%9E%E6%8E%A5/" data-id="ck54ryb1200041wy6dyvt8kgo"
+      <a data-url="http://yoursite.com/2020/01/08/%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98%E2%80%9Cerror-%E8%BF%9C%E7%A8%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%88%96%E8%AE%BE%E5%A4%87%E5%B0%86%E4%B8%8D%E6%8E%A5%E5%8F%97%E8%BF%9E%E6%8E%A5/" data-id="ck5j1xlm7000310y600jm19ce"
         class="article-share-link">分享</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li></ul>
@@ -161,7 +250,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/07/%E6%88%91%E4%B8%8D%E4%BF%A1%E7%A5%9E%EF%BC%8C%E4%BD%86%E6%88%91%E5%B8%8C%E6%9C%9B%E8%83%BD%E6%9C%89%E5%A4%A9%E5%A0%82%E2%80%94%E2%80%94%E5%89%8D%E9%99%A2%E7%88%B7/" data-id="ck54ryb0g00011wy68hnf6wuj"
+      <a data-url="http://yoursite.com/2020/01/07/%E6%88%91%E4%B8%8D%E4%BF%A1%E7%A5%9E%EF%BC%8C%E4%BD%86%E6%88%91%E5%B8%8C%E6%9C%9B%E8%83%BD%E6%9C%89%E5%A4%A9%E5%A0%82%E2%80%94%E2%80%94%E5%89%8D%E9%99%A2%E7%88%B7/" data-id="ck5j1xlm3000110y6hz6u55mf"
         class="article-share-link">分享</a>
       
     </footer>
@@ -221,7 +310,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/01/%E4%B8%80%E6%9C%88%E4%B8%80%E6%97%A5/" data-id="ck54ryb0700001wy6hvabc9te"
+      <a data-url="http://yoursite.com/2020/01/01/%E4%B8%80%E6%9C%88%E4%B8%80%E6%97%A5/" data-id="ck5j1xln0000a10y66avq0lej"
         class="article-share-link">分享</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E8%AE%B0/" rel="tag">日记</a></li></ul>
@@ -285,7 +374,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/31/%E6%88%91%E7%9A%84%E4%BA%8B%E8%AF%B4%E6%9D%A5%E8%AF%9D%E9%95%BF/" data-id="ck54ryb1q00071wy6gpixhohx"
+      <a data-url="http://yoursite.com/2019/12/31/%E6%88%91%E7%9A%84%E4%BA%8B%E8%AF%B4%E6%9D%A5%E8%AF%9D%E9%95%BF/" data-id="ck5j1xlmo000710y61rkqadp0"
         class="article-share-link">分享</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A5%E8%AE%B0/" rel="tag">日记</a></li></ul>
